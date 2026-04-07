@@ -61,7 +61,7 @@ function App() {
       <Header />
       
       {/* 종휘님 성함으로 Props 전달 ✅ */}
-      <Profile name="이종휘" major="간호학과 & 프로그래밍" />
+      <Profile name="이종휘" major="소프트웨어학과 & 프로그래밍" />
       
       <About />
       
