@@ -1,0 +1,168 @@
+# HTML Block 요소와 Inline 요소
+
+## 개요
+
+HTML 요소(Element)는 화면에 표시되는 방식에 따라 **Block 요소(Block Element)** 와 **Inline 요소(Inline Element)** 로 구분된다.
+
+두 요소의 가장 큰 차이점은 **줄바꿈 여부와 차지하는 공간의 범위**이다.
+
+---
+
+## Block 요소 (Block Element)
+
+Block 요소는 새로운 줄에서 시작하며, 기본적으로 한 줄 전체의 너비를 차지한다.
+
+### 특징
+
+* 항상 새로운 줄에서 시작한다.
+* 가로 너비를 모두 차지한다.
+* 다른 요소를 포함할 수 있다.
+* 레이아웃 구성에 주로 사용된다.
+
+### 예시
+
+```html
+<div>첫 번째 블록</div>
+<div>두 번째 블록</div>
+```
+
+결과
+
+```text
+첫 번째 블록
+두 번째 블록
+```
+
+자동으로 줄바꿈이 발생한다.
+
+---
+
+## 대표적인 Block 요소
+
+```html
+<div></div>
+<p></p>
+<h1></h1> ~ <h6></h6>
+<ul></ul>
+<ol></ol>
+<li></li>
+<header></header>
+<footer></footer>
+<section></section>
+<article></article>
+<form></form>
+```
+
+---
+
+## Inline 요소 (Inline Element)
+
+Inline 요소는 줄바꿈 없이 한 줄 안에서 표시된다.
+
+### 특징
+
+* 새로운 줄에서 시작하지 않는다.
+* 필요한 크기만큼만 공간을 차지한다.
+* 텍스트 내부에서 사용된다.
+* 가로, 세로 크기 설정에 제한이 있다.
+
+### 예시
+
+```html
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+```
+
+결과
+
+```text
+HTML CSS JavaScript
+```
+
+줄바꿈 없이 한 줄에 표시된다.
+
+---
+
+## 대표적인 Inline 요소
+
+```html
+<span></span>
+<a></a>
+<strong></strong>
+<b></b>
+<i></i>
+<em></em>
+<label></label>
+```
+
+---
+
+## Block 요소와 Inline 요소 비교
+
+| 구분       | Block 요소  | Inline 요소 |
+| -------- | --------- | --------- |
+| 줄바꿈      | O         | X         |
+| 너비       | 한 줄 전체 사용 | 내용만큼 사용   |
+| 높이/너비 지정 | 가능        | 제한적       |
+| 레이아웃 구성  | 가능        | 어려움       |
+| 사용 목적    | 구조 설계     | 텍스트 꾸미기   |
+
+---
+
+## 예제
+
+### Block 요소
+
+```html
+<div>HTML</div>
+<div>CSS</div>
+<div>JavaScript</div>
+```
+
+출력
+
+```text
+HTML
+CSS
+JavaScript
+```
+
+---
+
+### Inline 요소
+
+```html
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+```
+
+출력
+
+```text
+HTML CSS JavaScript
+```
+
+---
+
+## 정리
+
+### Block 요소
+
+* 줄바꿈 발생
+* 한 줄 전체 사용
+* 웹 페이지 구조 설계에 사용
+
+### Inline 요소
+
+* 줄바꿈 없음
+* 내용 크기만큼만 사용
+* 텍스트 스타일링 및 링크에 사용
+
+---
+
+## 결론
+
+Block 요소는 웹 페이지의 구조와 레이아웃을 구성하는 데 사용되며, Inline 요소는 텍스트나 작은 콘텐츠를 표현하는 데 사용된다. HTML 문서를 작성할 때 두 요소의 차이를 이해하면 효율적인 웹 페이지 구성이 가능하다.
+(6월9일 작성 감점요소)
